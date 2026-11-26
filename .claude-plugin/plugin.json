@@ -1,7 +1,7 @@
 {
   "name": "spec-and-cleanup",
-  "version": "0.1.6",
-  "description": "Keep generated code on spec and lean: spec_check checks a change against the project's SPEC.md (/spec_check), cleanup_crew reports what can be cut and waits for approval (/cleanup_crew), spec-init drafts the spec.",
+  "version": "0.1.7",
+  "description": "Two helpers for AI-built projects. /spec_check tells you whether a change matches your written plan. /cleanup_crew finds what to remove or fix, measures how fast the app loads, and waits for your OK on every item. /spec-init drafts the plan.",
   "author": {
     "name": "Robbie Wahl"
   },
@@ -9,6 +9,9 @@
   "keywords": [
     "spec-driven-development",
     "code-review",
-    "spec-drift"
-  ]
+    "code-cleanup",
+    "performance"
+  ],
+  "displayName": "Spec and Cleanup",
+  "repository": "https://github.com/jedistateofmind07/spec-and-cleanup"
 }
