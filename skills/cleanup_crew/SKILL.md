@@ -11,7 +11,7 @@ description: >-
 
 # cleanup_crew
 
-1. **Launch the `cleanup_crew` agent** (`remodel:cleanup_crew`) as a subagent with the repo
+1. **Launch the `cleanup_crew` agent** (`spec-and-cleanup:cleanup_crew`) as a subagent with the repo
    path and the scope from `$ARGUMENTS` (default: the whole repository).
 2. **Show its report to the user in full**: the grid as a table, every row, every
    column, in the agent's wording. Do not shorten the list, merge rows or drop the

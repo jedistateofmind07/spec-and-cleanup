@@ -10,7 +10,7 @@ description: >-
 
 # spec_check
 
-Launch the `spec_check` agent (`remodel:spec_check`) on the change and relay its report.
+Launch the `spec_check` agent (`spec-and-cleanup:spec_check`) on the change and relay its report.
 
 1. **Work out the target** from `$ARGUMENTS`. Default: the current branch against the
    default branch, plus uncommitted and untracked files. If the user named a feature

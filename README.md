@@ -1,10 +1,10 @@
-# remodel
+# spec-and-cleanup
 
 Two helpers for Claude Code that keep an AI-built project honest and tidy.
 
 When you build with AI, two things go wrong over time. The project drifts away from
 what you asked for, and it fills up with leftovers: unused code, the same thing written
-twice, slow pages, notes that are no longer true. remodel gives you one helper for each
+twice, slow pages, notes that are no longer true. spec-and-cleanup gives you one helper for each
 problem.
 
 ## What you get
@@ -39,11 +39,11 @@ problem.
 You need [Claude Code](https://claude.com/claude-code).
 
 ```bash
-claude plugin marketplace add jedistateofmind07/remodel
+claude plugin marketplace add jedistateofmind07/spec-and-cleanup
 ```
 
 ```bash
-claude plugin install remodel@remodel
+claude plugin install spec-and-cleanup@spec-and-cleanup
 ```
 
 ## How to use it
@@ -105,11 +105,11 @@ spec check on the result.
 **Local development**
 
 ```bash
-claude plugin marketplace add /path/to/remodel
+claude plugin marketplace add /path/to/spec-and-cleanup
 ```
 
 ```bash
-claude plugin validate /path/to/remodel
+claude plugin validate /path/to/spec-and-cleanup
 ```
 
 ## License

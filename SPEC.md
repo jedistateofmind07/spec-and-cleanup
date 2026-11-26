@@ -1,4 +1,4 @@
-# SPEC — remodel
+# SPEC — spec-and-cleanup
 
 <!-- DRAFT written by Claude on 2026-11-24. Robbie owns this file: edit or strike anything. -->
 
@@ -9,7 +9,7 @@
 - **Stack:** Markdown + JSON manifests; distributed as a git repo that is its own plugin marketplace.
 
 ## Core flows (must never break)
-1. Install — works when: `claude plugin marketplace add <repo>` then `claude plugin install remodel@remodel` succeed and `/spec_check` is available in a new session.
+1. Install — works when: `claude plugin marketplace add <repo>` then `claude plugin install spec-and-cleanup@spec-and-cleanup` succeed and `/spec_check` is available in a new session.
 2. `/spec-init` in a project with no spec — works when: a `SPEC.md` is written at the repo root from the template, with unconfirmed items listed, and nothing else is changed.
 3. `/cleanup_crew` — works when: the user sees a report grid (what, where, why, impact, how sure) and nothing in the repo has changed until they approve rows.
 3b. `/spec_check` on a branch — works when: the spec_check runs in a fresh context and returns a report in its documented format with a verdict line.
