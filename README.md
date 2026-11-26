@@ -76,9 +76,9 @@ You can point either helper at one part of the project, for example
 .claude-plugin/plugin.json        plugin manifest
 .claude-plugin/marketplace.json   lets this repo act as its own marketplace
 agents/spec_check.md              spec conformance reviewer (subagent)
-agents/cleanup_crew.md              cleanup scout (subagent)
-skills/spec_check/SKILL.md        /spec_check — runs the spec_check
-skills/cleanup_crew/SKILL.md      /cleanup_crew — runs the cleanup_crew, applies approved rows
+agents/cleanup_crew.md            cleanup scout (subagent)
+skills/spec_check/SKILL.md        /spec_check — runs the spec_check agent
+skills/cleanup_crew/SKILL.md      /cleanup_crew — runs the cleanup_crew agent, applies approved rows
 skills/spec-init/                 /spec-init and the SPEC.md template
 SPEC.md                           this plugin's own spec
 ```
