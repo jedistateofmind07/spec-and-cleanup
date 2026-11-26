@@ -1,11 +1,11 @@
 {
   "name": "remodel",
-  "description": "Osteoblast / osteoclast agents that keep an AI-built codebase on spec and lean.",
+  "description": "Spec check and cleanup crew agents that keep an AI-built codebase on spec and lean.",
   "owner": { "name": "Robbie Wahl" },
   "plugins": [
     {
       "name": "remodel",
-      "description": "Spec conformance review (osteoblast, /spec_check), approved cleanup (osteoclast, /cleanup_crew) and SPEC.md scaffolding (/spec-init).",
+      "description": "Spec conformance review (spec_check, /spec_check), approved cleanup (cleanup_crew, /cleanup_crew) and SPEC.md scaffolding (/spec-init).",
       "source": "./"
     }
   ]

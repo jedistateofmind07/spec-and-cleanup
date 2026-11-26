@@ -1,7 +1,7 @@
 {
   "name": "remodel",
-  "version": "0.1.4",
-  "description": "Keep generated code on spec and lean: osteoblast checks a change against the project's SPEC.md (/spec_check), osteoclast reports what can be cut and waits for approval (/cleanup_crew), spec-init drafts the spec.",
+  "version": "0.1.5",
+  "description": "Keep generated code on spec and lean: spec_check checks a change against the project's SPEC.md (/spec_check), cleanup_crew reports what can be cut and waits for approval (/cleanup_crew), spec-init drafts the spec.",
   "author": {
     "name": "Robbie Wahl"
   },

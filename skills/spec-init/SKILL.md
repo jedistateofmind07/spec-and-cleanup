@@ -2,8 +2,8 @@
 name: spec-init
 description: >-
   Draft a SPEC.md for the current project: the contract (product, core flows, rules,
-  budgets, checks, features) that the osteoblast agent checks changes against. Use when
-  the user types /spec-init, asks to "create the spec", or the osteoblast reports that a
+  budgets, checks, features) that the spec_check agent checks changes against. Use when
+  the user types /spec-init, asks to "create the spec", or the spec_check reports that a
   project has no SPEC.md.
 ---
 

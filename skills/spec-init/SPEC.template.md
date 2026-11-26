@@ -1,7 +1,7 @@
 # SPEC — <project name>
 
 <!--
-The contract the osteoblast checks every change against. Keep it short and true.
+The contract the spec_check checks every change against. Keep it short and true.
 Humans own this file: agents may PROPOSE edits, never apply them unasked.
 Every line should be something an agent can check by reading code or running a command.
 -->
@@ -29,7 +29,7 @@ Every line should be something an agent can check by reading code or running a c
 - Cost: <e.g. no new paid service without approval>
 
 ## Checks (commands that must pass)
-<!-- Deterministic gates. The osteoblast runs these before reading any code. -->
+<!-- Deterministic gates. The spec_check runs these before reading any code. -->
 - `<type-check command>`
 - `<lint command>`
 - `<test command, if any>`

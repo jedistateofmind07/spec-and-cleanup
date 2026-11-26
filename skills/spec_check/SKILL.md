@@ -1,7 +1,7 @@
 ---
 name: spec_check
 description: >-
-  Run the osteoblast: check the current change against the project's SPEC.md and report
+  Run the spec_check: check the current change against the project's SPEC.md and report
   a PASS / FAIL / PASS WITH GAPS verdict with evidence. Use when the user types
   /spec_check, asks "is this on spec?", or before opening a pull request.
   Arguments (optional): what to check (a branch, PR number or paths) and which feature
@@ -10,12 +10,12 @@ description: >-
 
 # spec_check
 
-Launch the `osteoblast` agent (`remodel:osteoblast`) on the change and relay its report.
+Launch the `spec_check` agent (`remodel:spec_check`) on the change and relay its report.
 
 1. **Work out the target** from `$ARGUMENTS`. Default: the current branch against the
    default branch, plus uncommitted and untracked files. If the user named a feature
    spec, PR or paths, pass them through as given.
-2. **Launch the osteoblast as a subagent** with a brief that contains only: the repo
+2. **Launch the spec_check as a subagent** with a brief that contains only: the repo
    path, the target, the feature spec to use (if named) and, if the user gave one, the
    stated goal of the change in their words. Do not pass your own summary of the work,
    your reasoning, or what you expect it to find: the review is only worth something if

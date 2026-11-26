@@ -7,16 +7,12 @@ what you asked for, and it fills up with leftovers: unused code, the same thing 
 twice, slow pages, notes that are no longer true. remodel gives you one helper for each
 problem.
 
-The name comes from bone. Your body rebuilds bone all the time: one kind of cell builds,
-another clears away what is no longer needed. These two helpers do the same for a
-codebase.
-
 ## What you get
 
 | Helper | What it does for you | How you run it |
 |---|---|---|
-| **Spec check** (the "osteoblast") | Reads your written plan and tells you whether the latest change matches it. Gives a clear verdict: pass, fail, or pass with gaps. | `/spec_check` |
-| **Cleanup crew** (the "osteoclast") | Looks through the project for things you no longer need or that cost too much, measures how fast it loads, and gives you a list of what to remove or fix. | `/cleanup_crew` |
+| **Spec check** | Reads your written plan and tells you whether the latest change matches it. Gives a clear verdict: pass, fail, or pass with gaps. | `/spec_check` |
+| **Cleanup crew** | Looks through the project for things you no longer need or that cost too much, measures how fast it loads, and gives you a list of what to remove or fix. | `/cleanup_crew` |
 | **Spec starter** | Writes the first draft of your plan (a file called `SPEC.md`) so the other two have something to check against. | `/spec-init` |
 
 ## What makes it safe
@@ -79,10 +75,10 @@ You can point either helper at one part of the project, for example
 ```
 .claude-plugin/plugin.json        plugin manifest
 .claude-plugin/marketplace.json   lets this repo act as its own marketplace
-agents/osteoblast.md              spec conformance reviewer (subagent)
-agents/osteoclast.md              cleanup scout (subagent)
-skills/spec_check/SKILL.md        /spec_check — runs the osteoblast
-skills/cleanup_crew/SKILL.md      /cleanup_crew — runs the osteoclast, applies approved rows
+agents/spec_check.md              spec conformance reviewer (subagent)
+agents/cleanup_crew.md              cleanup scout (subagent)
+skills/spec_check/SKILL.md        /spec_check — runs the spec_check
+skills/cleanup_crew/SKILL.md      /cleanup_crew — runs the cleanup_crew, applies approved rows
 skills/spec-init/                 /spec-init and the SPEC.md template
 SPEC.md                           this plugin's own spec
 ```
@@ -91,11 +87,11 @@ SPEC.md                           this plugin's own spec
 read-only rule in their prompts: no edits, commits, pushes, deploys or database writes.
 A measuring command may write only to a temporary folder outside the repository.
 
-- `osteoblast` starts with no knowledge of how the change was made and judges the diff
+- `spec_check` starts with no knowledge of how the change was made and judges the diff
   against `SPEC.md`: each "done when", out-of-scope work, project rules, and spec drift.
   Every finding cites a file and line or a command and its output. Verdict: `PASS`,
   `FAIL` or `PASS WITH GAPS`.
-- `osteoclast` sweeps for dead, duplicated, over-built, slow and stale items. "Unused"
+- `cleanup_crew` sweeps for dead, duplicated, over-built, slow and stale items. "Unused"
   must be proven by searching imports, string and dynamic references, config, routes,
   scheduled jobs, scripts, CI and database functions. Speed is measured, not guessed:
   bundle sizes from a build into a temp folder, load time per core flow (cold and warm),
